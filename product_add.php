@@ -5,7 +5,7 @@
     <h2>Tambah Produk Baru</h2>
     <form action="product_add.php" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="name">Nama Produk</label>
+            <label for="name">Nama Produkk</label>
             <input type="text" class="form-control" id="name" name="name">
         </div>
         <div class="form-group">
