@@ -18,11 +18,18 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+                <a class="nav-link" href="index.php">Beranda</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="cart.php">Keranjang</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="checkout.php">Checkout</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="product_add.php">Tambah Produk</a>
+            </li>
         </ul>
     </div>
 </nav>
+<div class="container" style="padding-top: 70px;">
