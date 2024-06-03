@@ -8,32 +8,66 @@ $result = $conn->query($query);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lihat Beasiswa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <a href="tambah_beasiswa.php">Tambah Beasiswa</a>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Nama</th>
-            <th>Detail</th>
-            <th>Link</th>
-            <th>Gambar</th>
-            <th>Aksi</th>
-        </tr>
-        <?php while ($row = $result->fetch_assoc()): ?>
-        <tr>
-            <td><?= $row['id'] ?></td>
-            <td><?= $row['nama'] ?></td>
-            <td><?= $row['detail'] ?></td>
-            <td><?= $row['link'] ?></td>
-            <td><?= $row['gambar'] ?></td>
-            <td>
-                <a href="edit_beasiswa.php?id=<?= $row['id'] ?>">Edit</a>
-                <a href="hapus_beasiswa.php?id=<?= $row['id'] ?>" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
-            </td>
-        </tr>
-        <?php endwhile; ?>
-    </table>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.php">Manajemen Beasiswa</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="lihat_beasiswa.php">Beasiswa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pendaftar/lihat_pendaftar.php">Pendaftar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../kriteria/lihat_kriteria.php">Kriteria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pengumuman/lihat_pengumuman.php">Pengumuman</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="my-4">Daftar Beasiswa</h2>
+        <a href="tambah_beasiswa.php" class="btn btn-primary mb-3">Tambah Beasiswa</a>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nama Beasiswa</th>
+                    <th>Deskripsi</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($row = $result->fetch_assoc()): ?>
+                <tr>
+                    <td><?= $row['id'] ?></td>
+                    <td><?= $row['nama'] ?></td>
+                    <td><?= $row['deskripsi'] ?></td>
+                    <td>
+                        <a href="edit_beasiswa.php?id=<?= $row['id'] ?>" class="btn btn-success" data-toggle="tooltip" title="Edit">Edit</a>
+                        <a href="hapus_beasiswa.php?id=<?= $row['id'] ?>" class="btn btn-danger" data-toggle="tooltip" title="Hapus" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
+                    </td>
+                </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sistem Manajemen Beasiswa. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
