@@ -1,6 +1,6 @@
 <?php
-include 'db.php';
-include 'templates/header.php';
+include '../db.php';
+include '../templates/header.php';
 
 // Query untuk mendapatkan data
 $totalSiswa = $conn->query("SELECT COUNT(*) AS total FROM Siswa")->fetch_assoc()['total'];
@@ -54,5 +54,5 @@ $totalKriteria = $conn->query("SELECT COUNT(*) AS total FROM Kriteria")->fetch_a
 
 <?php
 $conn->close();
-include 'templates/footer.php';
+include '../templates/footer.php';
 ?>
