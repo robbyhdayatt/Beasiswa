@@ -1,4 +1,62 @@
 <footer class="footer mt-auto py-3">
+    <style>
+        .footer {
+            background-color: #001f3f; /* Ganti warna latar belakang */
+            color: #ffffff; /* Ganti warna teks */
+            padding: 40px 0;
+        }
+
+        .footer h5 {
+            color: #ffffff; /* Ganti warna teks judul */
+            margin-bottom: 20px;
+        }
+
+        .footer p, .footer ul {
+            color: #d3d3d3; /* Ganti warna teks paragraf dan daftar */
+            font-size: 14px;
+        }
+
+        .footer ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li i {
+            margin-right: 10px;
+        }
+
+        .footer .list-inline {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .footer .list-inline-item {
+            margin-right: 15px;
+        }
+
+        .footer .list-inline-item a {
+            color: #d3d3d3; /* Ganti warna ikon media sosial */
+            transition: color 0.3s;
+        }
+
+        .footer .list-inline-item a:hover {
+            color: #ffffff; /* Ganti warna ikon saat dihover */
+        }
+
+        .footer hr {
+            border-top: 1px solid #34495e;
+            margin: 20px 0;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -8,9 +66,9 @@
             <div class="col-md-4">
                 <h5>Kontak</h5>
                 <ul class="list-unstyled">
-                    <li><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Pendidikan No.1, Jakarta</li>
-                    <li><i class="fas fa-phone"></i> Telepon: (021) 123-4567</li>
-                    <li><i class="fas fa-envelope"></i> Email: info@beasiswa.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Universitas Lampung</li>
+                    <li><i class="fas fa-phone"></i> Telepon: 087748672761</li>
+                    <li><i class="fas fa-envelope"></i> Email: robbyhdayatt@gmail.com</li>
                 </ul>
             </div>
             <div class="col-md-4">
@@ -31,10 +89,3 @@
         </div>
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script src="js/script.js"></script>
-</body>
-</html>

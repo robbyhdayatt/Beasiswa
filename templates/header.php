@@ -11,6 +11,59 @@
 </head>
 <body>
     <div class="sidebar">
+        <style>
+            /* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #001f3f;
+    color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar-header {
+    text-align: center;
+}
+
+.sidebar h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    width: 100%;
+}
+
+.sidebar nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background: #34495e;
+}
+
+.sidebar nav ul li a i {
+    margin-right: 10px;
+}
+        </style>
         <div class="sidebar-header">
             <h1>Manajemen Beasiswa</h1>
         </div>
