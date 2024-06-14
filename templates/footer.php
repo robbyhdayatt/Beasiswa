@@ -4,6 +4,7 @@
             background-color: #001f3f; /* Ganti warna latar belakang */
             color: #ffffff; /* Ganti warna teks */
             padding: 40px 0;
+            text-align: center;
         }
 
         .footer h5 {
